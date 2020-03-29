@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 3vw;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: chartreuse;
+}
+
+nav {
+    background-color: #262626;
+    height: 4em;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+}
+
+section {
+    background-color: crimson;
+    border: solid black 1em;
+    height: 100vh;
+    padding: 5em 2em;
+    display: grid;
+    grid-gap: 16px;
+}
+
+#hero {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding-top: 70vh;
+}
+
+#hero2 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding-top: 70vh;
+}
+
+
+#current {
+    display: grid;
+    grid-gap: 16px;
+    grid-template-rows: 80px;
+}
+
+#long {
+    height: 80vh;
+}
+
+#short {
+    height: 100%;
+}
+
+#cal {
+    height: 47vh;
+}
+
+#cal2 {
+    height: 30vh;
+}
+
+#list {
+    height: 49vh;
+    width: 70%;
+    margin: 0 auto;
+}
+
+#mini {
+    height: 100%;
+}
+
+#get {
+    height: 33vh;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    padding-top: 10vh;
+}
+
+.idk {
+    height: 40vh;
+}
+
+#race {
+    height: 30vh;
+}
+
+#intro {
+    height: 10vh;
+}
+
+button {
+    padding: 1.5em;
+    background-color: #262626;
+    color: white;
+    height: 4em;
+    bottom: 6em;
+    position: absolute;
+}
+
+article {
+    background-color: chartreuse;
+}
+
+footer {
+    background-color: #262626;
+    height: 8em;
+}
+
+h2 {
+    text-align: center;
+}
+
+h4 {
+    font-weight: 900;
+}
