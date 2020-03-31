@@ -1,0 +1,511 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+html {
+    font-size: 2.6vw;
+    font-family: sans-serif;
+}
+
+body {
+    background-color:
+}
+
+nav {
+    background-color: #262626;
+    height: 4em;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    z-index: 999;
+}
+
+nav img {
+    height: 50%;
+    padding: 1em;
+}
+
+ul {
+    display: grid;
+    position: absolute;
+    visibility: hidden;
+    height: 100vh;
+    width: 100vw;
+    list-style-type: none;
+    background-color: #262626;
+    margin-top: 4em;
+    transition: 1s all;
+    transform: translateX(-100vw);
+    z-index: 998
+}
+
+li {
+    padding: 20px;
+    text-align: center;
+}
+
+.menuToggled {
+    visibility: visible;
+    transform: translateX(0px);
+}
+
+section {
+    height: 100vh;
+    padding: 5em 2em;
+    display: grid;
+    grid-gap: 16px;
+    grid-template-rows: 80px;
+}
+
+article {
+    background-color: chartreuse;
+}
+
+
+#hero {
+    display: grid;
+    position: relative;
+    background-image: url("../images/indexImage1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#no {
+    position: absolute;
+    left: 50%;
+    bottom: 40%;
+    transform: translate(-50%, 50%);
+    color: white;
+}
+
+#hero2 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding-top: 70vh;
+}
+
+
+#current {
+    display: grid;
+    grid-gap: 16px;
+    grid-template-rows: 1fr 1fr;
+}
+
+#currentBg {
+    background-image: url("../images/indexImage2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#currentText {
+    padding: 2em;
+}
+
+#leader {
+    grid-gap: 0;
+    margin: 0;
+    padding: 0;
+    height: 680px;
+    overflow: hidden;
+}
+
+#shortLeaderTop {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 60px;
+    transform: skewX(-25deg) translateX(15px);
+    grid-gap: 8px;
+
+}
+
+#shortLeaderTop article {
+    background-color: #262626;
+    color: white;
+    padding: 2em 2em;
+}
+
+#shortLeaderTop h4 {
+    transform: skewX(25deg);
+    font-size: 2em;
+}
+
+#shortLeaderMiddle {
+    background-color: #262626;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(7, 60px);
+    grid-gap: 8px;
+}
+
+#shortLeaderMiddle article {
+    background-color: crimson;
+    color: white;
+    text-align: center;
+    padding-top: 1em;
+    font-size: 2em;
+}
+
+#shortLeaderMiddle article:nth-child(3n+2) {
+    background-color: #822d22;
+    outline: white solid 8px;
+}
+
+#shortLeaderBottom {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 60px;
+    transform: skewX(-25deg) translateX(-14px);
+    grid-gap: 8px;
+
+}
+
+#shortLeaderBottom article {
+    background-color: #E0433A;
+    display: grid;
+
+}
+
+#shortLeaderBottom article:nth-child(odd) {
+    background-color: #262626;
+}
+
+#shortLeaderBottom article:nth-child(even) {
+    margin-top: 8px
+}
+
+#shortLeaderBottom h4 {
+    transform: skewX(25deg);
+    color: white;
+    font-size: 2em;
+    text-align: center;
+}
+
+#short {
+    height: 70vh;
+    width: 100%;
+}
+
+#long {
+    height: 80vh;
+}
+
+.ehhh {
+    display: grid;
+}
+
+#tickets {
+    display: grid;
+}
+
+#cal {
+    height: 47vh;
+}
+
+#cal2 {
+    height: 31vh;
+}
+
+#times {
+    height: 47vh;
+}
+
+#map3 {
+    height: 31vh;
+}
+
+#list {
+    height: 49vh;
+    width: 70%;
+    margin: 0 auto;
+}
+
+#routes {
+    height: 100vh;
+}
+
+#mini {
+    height: 100%;
+}
+
+#maps {
+    display: grid;
+}
+
+#log {
+    display: grid;
+    grid-gap: 16px;
+}
+
+#get {
+    height: 33vh;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    padding-top: 5vh;
+    background-image: url("../images/indexImage3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#yes {
+    position: absolute;
+    bottom: 50%;
+    display: grid;
+    grid-gap: 16px;
+    z-index: 2;
+}
+
+#cover {
+    display: none;
+    background-color: #262626;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100vw;
+    z-index: 1;
+    transform: skewX(-25deg) translateX(10em);
+}
+
+.idk {
+    height: 39vh;
+}
+
+#race {
+    height: 30vh;
+}
+
+#intro {
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+#testing {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    padding-left: 0;
+    padding-right: 0;
+    overflow: hidden;
+}
+
+#testing1 {
+    grid-column: 1/4;
+}
+
+button {
+    padding: 1.5em;
+    background-color: #262626;
+    color: white;
+    border: none;
+}
+
+footer {
+    background-color: #262626;
+    height: 8em;
+}
+
+h1 {}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    font-size: 2em;
+
+}
+
+h4 {
+    font-weight: 900;
+}
+
+h6 {
+    font-size: 3em;
+    color: white;
+}
+
+p {
+    font-size: 2em;
+}
+
+#yes h2 {
+    background-color: red;
+    color: white;
+    padding: 1em
+}
+
+@media screen and (min-width: 580px) {
+
+
+    html {
+        font-size: 1.4vw;
+    }
+
+    #current {
+        grid-template-columns: 1fr 1fr;
+        margin: 10em;
+        grid-template-rows: 1fr;
+    }
+
+    .ehhh {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    #cal {
+        height: 100vh;
+        padding: 15em;
+    }
+
+    #cal2 {
+        height: 72vh;
+        padding: 15em;
+    }
+
+    #map3 {
+        height: 33vh;
+        margin-left: 30em;
+    }
+
+    #long {
+        height: 72vh;
+    }
+
+    #tickets {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    #race {
+        height: 72vh;
+    }
+
+    #list {
+        height: 100%;
+        width: 100%;
+    }
+
+    #maps {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    #log {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #routes {
+        height: 130vh;
+    }
+
+    #times {
+        height: 60vh;
+    }
+
+    .idk {
+        height: 72vh;
+    }
+
+    #intro {
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .introduction {
+        grid-row: 1/3;
+    }
+
+    #get {
+        height: 100vh;
+        padding-top: 30em;
+    }
+
+    #get button {
+        bottom: 24em;
+    }
+
+    #cover {
+        display: block;
+    }
+
+    footer {
+        background-color: #262626;
+        height: 12em;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+}
+
+@media screen and (min-width: 1600px) {
+
+    html {
+        font-size: 1vw;
+    }
+
+    #hero {
+        padding-top: 57vh;
+    }
+
+    #current {
+        grid-template-columns: 1fr 1fr;
+        margin: 1em 8em;
+    }
+
+    #leader {
+        height: 120vh;
+    }
+
+    #cal {
+        height: 100vh;
+        padding: 4em 20em;
+    }
+
+    #get {
+        height: 100vh;
+        padding-top: 20em;
+    }
+
+    #get button {
+        bottom: 15em;
+    }
+
+    #routes {
+        height: 189vh;
+    }
+
+    #map3 {
+        height: 67vh;
+        margin-left: 30em;
+    }
+
+    #times {
+        height: 85vh;
+    }
+
+    button {
+        width: 25em;
+    }
+
+    footer {
+        height: 12em;
+    }
+
+
+    h6 {
+        font-size: 2em;
+        color: white;
+    }
+
+}
